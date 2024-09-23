@@ -2,33 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <title>Vietnam Location Selector</title>
+
+  <script src="scripts.js"></script>
+
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
   <h1>Select Province and City/District (Vietnam)</h1>
   
   <div class="form-group">
-    <label for="province">Province:</label>
-    <select id="province" name="province" onchange="updateCities()">
-      <option value="">Select a province</option>
-      <option value="Hanoi">Hà Nội</option>
-      <option value="HCMC">Hồ Chí Minh City</option>
-      <option value="Danang">Đà Nẵng</option>
-      <option value="CanTho">Cần Thơ</option>
-      <option value="Hue">Huế</option>
-    </select>
-  </div>
+    <form action="#">
+      <label for="country">Country:</label>
+      <select id="country" name="country"">
+        <option value="country"><-Select Country-></option>
+      </select>
 
-  <div class="form-group">
-    <label for="city">City/District:</label>
-    <select id="city" name="city">
-      <option value="">Select a city/district</option>
-    </select>
-  </div>
+      <label for="province">Province:</label>
+      <select id="province" name="province"">
+        <option value="province"><-Select Province-></option>
+      </select>
 
-  <script src="scripts.js"></script>
+      <label for="district/city">District/City:</label>
+      <select id="district/city" name="district/city"">
+        <option value="district/city"><-Select District/City-></option>
+      </select>
+
+      <label for="ward/town/commune">Ward/Town/Commune:</label>
+      <select id="ward/town/commune" name="ward/town/commune"">
+        <option value="ward/town/commune"><-Select Ward/Town/Commune-></option>
+      </select>
+    </form>
+  </div>
 </body>
 </html>
